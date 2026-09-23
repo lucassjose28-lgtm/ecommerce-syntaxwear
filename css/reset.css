@@ -1,0 +1,126 @@
+/*
+ * Modern CSS reset based on Andy Bell's reset.
+ * https://piccalil.li/blog/a-modern-css-reset/
+ */
+
+/*
+  Use a more intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove default margin and padding from most elements.
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Allow percentage-based heights in the application.
+*/
+html,
+body {
+  min-height: 100%;
+}
+
+/*
+  Improve text rendering and prevent font-size adjustments on mobile.
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+  Improve media defaults.
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  Inherit fonts for form controls.
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  Avoid text overflows and balance headings where supported.
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/*
+  Remove list styles when a list has an explicit role.
+*/
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/*
+  Make links inherit the surrounding color unless styled otherwise.
+*/
+a {
+  color: inherit;
+}
+
+/*
+  Improve button and link interaction on touch devices.
+*/
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+  Prevent textarea resizing from breaking layouts.
+*/
+textarea {
+  resize: vertical;
+}
+
+/*
+  Create a stacking context for common application roots.
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
